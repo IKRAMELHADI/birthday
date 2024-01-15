@@ -9,20 +9,40 @@
         <header>
         <h1 > My birthday</h1>
         </header>
-        <h2>informations</h2>
         <header >
             <form>
                 <fieldset>
-                <label>Nom</label><input type ="text" placeholder="votre nom ici"/><br>
-                <label>Date  </label><input type ="date" placeholder="la date de la fete ici"/><br>
-                <label>Heure </label><input type ="number" placeholder="l'heure de la fete ici"/><br>
+                <legend>informations</legend>
+                <legend>informations</legend>
+                <label> NOM:IKRAM</label><br>
+                <label> DATE: 21/11/2024</label><br>
+                <label> THEME: METGALA</label><br>
+                <label> HEURE:16:30 </label><br>
                 <label><a href="https://www.lemans.fr/dynamique/la-proximite/les-salles-municipales/le-
                     descriptif-des-salles-municipales/la-salle-du-jardin-des-plantes/"> Lieu</a> </label><br>
-                <input type="submit" value="valider"/>
+                
                 </fieldset>  
             </form>
-           
-        <script src="birthday.js"></script>
+            <fieldset>
+            <button id="savoir+" onclick="displayExplanations()"> en savoir plus</button>
+            <p id="savoir"> 
+                Il y a tellement de plaisir associé aux anniversaires. Vous rencontrez des gens, 
+                des amis, jouez, mettez des gâteaux et chantez ensuite des chansons d'anniversaire. 
+                Et bien plus encore nous partageons la joie et les cadeaux avec nos proches et nos amis.
+            </p>
+            </fieldset>
+            
 
+
+            <form >
+            <fieldset>  
+            <legend>Invités</legend>
+            <label>Nom</label><input type ="text" placeholder="votre nom ici"/><br>
+            <label>Nombre </label><input type ="number" placeholder="lE NOMBRE D'INVITES"/><br>
+            <input type="submit" value="valider"/>
+            </fieldset>
+            </form>
+            <script src="birthday.js"></script>
     </body>
+</html>
 

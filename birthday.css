@@ -2,12 +2,14 @@ label{
     width: 20%;
     display: inline-block;
     text-align: left;
+    padding: 20px;
+    margin: 20px;
 }
 body{
 width: 50%;
 font-family: Arial, Helvetica, sans-serif;
 margin: 5px auto;
-background-color: rgb(228, 108, 168);
+background-color: rgb(236, 175, 228);
 padding: 20px;
 
 }
@@ -17,10 +19,10 @@ fieldset{
 }
 input[type="text"],input[type="date"],input[type="number"]{
     border-radius: 5px;
-    padding: 10px;
-    width: 70px;
+    padding: 20px;
+    width: 150px;
     background-color: beige;
-    margin: 10px;
+    margin: 20px;
 }
 
 input[type="submit"]{
@@ -33,5 +35,9 @@ input[type="submit"]{
     margin-top: 8px;
 }
 h1{
-    TE
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    display: none;
 }
