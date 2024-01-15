@@ -12,11 +12,54 @@ if($connection->connect_error){
 else{
     echo("No Error");
 }
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $Nom =$_POST['Nom'];
-    $Nombre =$_POST['Nombre'];
-    $sql ="SELECT FROM `birthday-guests`(NOM,NOMBRE) VALUES('$Nom','$Nombre')";
-    $resultat=$connection->query($sql)
+$seletDataquery="SELECT * FROM `birthday-guests`";
+
+
+
+
+
+
+
+if ($result->num_rows > 0) {
+
+$totalGuests = 0;
+
+
+
+while ($row = $result->fetch_assoc()) {
+
+   
+
+    echo "Nom: " . $row["Nom"] . " - Nombre: " . $row["Nombre"] . "<br>";
+
+
+
+    
+
+    $totalGuests += $row["Nombre"];
 
 }
+
+
+
+
+
+echo "<p>Le nombre total d'invités est : " . $totalGuests . "</p>";
+
+} else {
+
+echo "Aucun résultat trouvé dans la base de données.";
+
+}
+
+
+
+$connection->close();  
+
 ?>
+
+
+
+
+
+
